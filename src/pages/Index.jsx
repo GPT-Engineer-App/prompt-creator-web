@@ -51,7 +51,15 @@ const Index = () => {
 
         <FormControl>
           <FormLabel>Camera</FormLabel>
-          <Input name="camera" value={promptDetails.camera} onChange={handleChange} placeholder="Enter the camera details" />
+          <Select name="camera" value={promptDetails.camera} onChange={handleChange} placeholder="Select camera angle">
+            <option value="Low Angle">Low Angle</option>
+            <option value="High Angle">High Angle</option>
+            <option value="Eye Level">Eye Level</option>
+            <option value="Bird's Eye">Bird's Eye</option>
+            <option value="Worm's Eye">Worm's Eye</option>
+            <option value="Dutch Angle">Dutch Angle</option>
+            <option value="Over the Shoulder">Over the Shoulder</option>
+          </Select>
         </FormControl>
 
         <FormControl>
