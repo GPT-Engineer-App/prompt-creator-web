@@ -30,28 +30,28 @@ const Index = () => {
         </Text>
 
         <FormControl>
-          <FormLabel>Subject</FormLabel>
-          <Input name="subject" value={promptDetails.subject} onChange={handleChange} placeholder="Enter the subject" />
+          <FormLabel>What</FormLabel>
+          <Input name="subject" value={promptDetails.subject} onChange={handleChange} placeholder="Enter the type of image, art style, medium, etc." />
         </FormControl>
 
         <FormControl>
-          <FormLabel>Style</FormLabel>
-          <Input name="style" value={promptDetails.style} onChange={handleChange} placeholder="Enter the style" />
+          <FormLabel>Who</FormLabel>
+          <Input name="style" value={promptDetails.style} onChange={handleChange} placeholder="Enter the main subject or theme" />
         </FormControl>
 
         <FormControl>
-          <FormLabel>Color Scheme</FormLabel>
-          <Input name="colorScheme" value={promptDetails.colorScheme} onChange={handleChange} placeholder="Enter the color scheme" />
+          <FormLabel>Where</FormLabel>
+          <Input name="colorScheme" value={promptDetails.colorScheme} onChange={handleChange} placeholder="Enter the scene or setting" />
         </FormControl>
 
         <FormControl>
-          <FormLabel>Lighting</FormLabel>
-          <Input name="lighting" value={promptDetails.lighting} onChange={handleChange} placeholder="Enter the lighting" />
+          <FormLabel>When</FormLabel>
+          <Input name="lighting" value={promptDetails.lighting} onChange={handleChange} placeholder="Enter the time or lighting" />
         </FormControl>
 
         <FormControl>
-          <FormLabel>Camera</FormLabel>
-          <Select name="camera" value={promptDetails.camera} onChange={handleChange} placeholder="Select camera angle">
+          <FormLabel>How</FormLabel>
+          <Select name="camera" value={promptDetails.camera} onChange={handleChange} placeholder="Enter the style, rendering, extra details">
             <option value="Low Angle">Low Angle</option>
             <option value="High Angle">High Angle</option>
             <option value="Eye Level">Eye Level</option>
