@@ -12,7 +12,7 @@ const Index = () => {
     additionalDetails: "",
   });
 
-  const { hasCopied, onCopy } = useClipboard(`What: ${promptDetails.style}, ${promptDetails.colorScheme}, ${promptDetails.camera}, ${promptDetails.additionalDetails}, Who: ${promptDetails.subject}, Where: ${promptDetails.lighting}`);
+  const { hasCopied, onCopy } = useClipboard(`${promptDetails.style}, ${promptDetails.colorScheme}, ${promptDetails.camera}, ${promptDetails.additionalDetails}, ${promptDetails.subject}, ${promptDetails.lighting}`);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -76,7 +76,7 @@ const Index = () => {
         <Text fontSize="lg" fontWeight="bold">
           Generated Prompt:
         </Text>
-        <Text>{`What: ${promptDetails.style}, ${promptDetails.colorScheme}, ${promptDetails.camera}, ${promptDetails.additionalDetails}, Who: ${promptDetails.subject}, Where: ${promptDetails.lighting}`}</Text>
+        <Text>{`${promptDetails.style}, ${promptDetails.colorScheme}, ${promptDetails.camera}, ${promptDetails.additionalDetails}, ${promptDetails.subject}, ${promptDetails.lighting}`}</Text>
       </VStack>
     </Container>
   );
